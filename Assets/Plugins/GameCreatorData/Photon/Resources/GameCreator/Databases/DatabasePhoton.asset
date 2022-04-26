@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: DatabasePhoton
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 1686582474529990, guid: 0359242956b20984c9fd72c2e7e0f04e, type: 3}
-  - {fileID: 593261507376577122, guid: 7e9d901792ed2ce4ea8f0de3fde8b38b, type: 3}
-  - {fileID: 4559685343787697971, guid: f8c6f81310d57294889e7aeae1e12be3, type: 3}
-  - {fileID: 4303834677471561952, guid: 0e5346ec825f6324b82f1f8b230afca4, type: 3}
+  - {fileID: 7290718974887044732, guid: 634851fc2ce4f3c47925bd6eacda681a, type: 3}
   attachments:
   - {fileID: 1640791288185062, guid: 3e5fdac126b9f5940ac38569f60469b3, type: 3}
+  playerProperties: []
+  roomProperties: []
+  networkEvents: []
   monobehaviourCache: 0
   sendRate: 20
   sendRateOnSerialize: 10

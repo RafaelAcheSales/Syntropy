@@ -49,5 +49,7 @@ EditorBuildSettings:
     path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene.unity
     guid: 711b38c07f2cf904f81b3422c67f1825
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 1b07c519e3ed45543980eb76133017a3,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: f5e421705af4c0c4eb464c73b409c0e6, type: 2}

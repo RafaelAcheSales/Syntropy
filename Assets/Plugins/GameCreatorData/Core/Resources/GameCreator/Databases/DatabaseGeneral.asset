@@ -19,7 +19,7 @@ MonoBehaviour:
   forceDisplayInEditor: 0
   touchstickMode: 0
   saveScenes: 1
-  provider: {fileID: 0}
+  provider: {fileID: 11400000, guid: 1f9bc473c42a74d268e54adf54fbcad8, type: 2}
   toolbarPositionX: 10
   toolbarPositionY: 10
   musicAudioMixer: {fileID: 0}

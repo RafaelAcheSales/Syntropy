@@ -83,3 +83,52 @@ MonoBehaviour:
       - Assets/Ninjutsu Games/GameCreator Modules/PhotonExamples/
       dataPaths:
       - Assets/Plugins/GameCreatorData/Photon/Resources/GameCreator/Databases
+  - module:
+      moduleID: com.gamecreator.module.inventory
+      version:
+        major: 1
+        minor: 1
+        patch: 5
+      displayName: Inventory
+      description: Manage, trade, use, equip and craft items. Includes a couple of
+        inventory skins.
+      category: Module
+      dependencies: []
+      tags:
+      - module
+      - inventory
+      authorName: Marti-Joan Nogue Coll
+      authorMail: marti@catsoft-studios.com
+      authorSite: https://gamecreator.io
+      includesData: 0
+      codePaths:
+      - Assets/Plugins/GameCreator/Inventory/
+      dataPaths:
+      - Assets/Plugins/GameCreatorData/Inventory/
+  - module:
+      moduleID: com.gamecreator.examples.inventory
+      version:
+        major: 1
+        minor: 1
+        patch: 3
+      displayName: Inventory Examples
+      description: Learn how to use the Inventory module, set up items, trigger effects
+        and trade items for currency.
+      category: Examples
+      dependencies:
+      - moduleID: com.gamecreator.module.inventory
+        version:
+          major: 1
+          minor: 1
+          patch: 2
+      tags:
+      - examples
+      - inventory
+      authorName: Marti-Joan Nogue Coll
+      authorMail: marti@catsoft-studios.com
+      authorSite: https://gamecreator.io
+      includesData: 1
+      codePaths:
+      - Assets/Plugins/GameCreator/InventoryExamples/
+      dataPaths:
+      - Assets/Plugins/GameCreatorData/Inventory/
