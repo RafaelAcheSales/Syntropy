@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 7290718974887044732, guid: 634851fc2ce4f3c47925bd6eacda681a, type: 3}
+  - {fileID: 8517503139103069790, guid: c3f88e34d5f586c4898acf7d9ca72039, type: 3}
   attachments:
   - {fileID: 1640791288185062, guid: 3e5fdac126b9f5940ac38569f60469b3, type: 3}
   playerProperties: []

@@ -23,6 +23,7 @@ MonoBehaviour:
     - {fileID: 114961875310084520}
     - {fileID: 114212023077505736}
     - {fileID: 114670950127064220}
+    - {fileID: 7500061162916851922}
     recipes:
     - {fileID: 114798038658200360}
     itemTypes:
@@ -51,9 +52,9 @@ MonoBehaviour:
         content: LeftHand
         postProcess: 0
         translationID: 0
-    - id: 
+    - id: General/
       name:
-        content: 
+        content: Plants
         postProcess: 0
         translationID: 0
     - id: 
@@ -189,15 +190,15 @@ MonoBehaviour:
   inventorySettings:
     merchantUIPrefab: {fileID: 0}
     containerUIPrefab: {fileID: 0}
-    inventoryUIPrefab: {fileID: 1776935227048216, guid: 8d2fd14a2c95a4818a01edf51761b09d,
+    inventoryUIPrefab: {fileID: 1776935227048216, guid: c6709215825b74b48850702f33e7613b,
       type: 3}
     onDragGrabItem: 1
     saveInventory: 1
     cursorDrag: {fileID: 2800000, guid: 21b611b5099004ff38798dfed2a007ad, type: 3}
     cursorDragHotspot: {x: 8, y: 8}
-    dragItemsToCombine: 1
-    pauseTimeOnUI: 1
-    canDropItems: 1
+    dragItemsToCombine: 0
+    pauseTimeOnUI: 0
+    canDropItems: 0
     dropItemMaxDistance: 2
     limitInventoryWeight: 1
     maxInventoryWeight:
@@ -801,7 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uuid: 1150090570
   itemName:
-    content: Hammer
+    content: Hoe
     postProcess: 0
     translationID: 0
   itemDescription:
@@ -810,9 +811,9 @@ MonoBehaviour:
     translationID: 0
   itemColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   sprite: {fileID: 21300000, guid: 62b77465a0a1c424ab5821210457a860, type: 3}
-  prefab: {fileID: 0}
+  prefab: {fileID: 1309936475503278, guid: 5a142f078c588454ca16909367867308, type: 3}
   canBeSold: 1
-  price: 3000
+  price: 200
   maxStack: 1
   weight: 5
   itemTypes: 22
@@ -868,4 +869,45 @@ MonoBehaviour:
   actionsOnEquip: {fileID: 114977925338163432, guid: 2221a8836a00145edab0ca452ffaff8e,
     type: 3}
   actionsOnUnequip: {fileID: 114222569409153632, guid: 0985155c770a847719e899bdb537068d,
+    type: 3}
+--- !u!114 &7500061162916851922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.887351663
+  m_EditorClassIdentifier: 
+  uuid: 887351663
+  itemName:
+    content: GenericPlant
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: 
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  sprite: {fileID: 21300000, guid: 4b2ef6a562e193543be7578bef747c89, type: 3}
+  prefab: {fileID: 8517503139103069790, guid: c3f88e34d5f586c4898acf7d9ca72039, type: 3}
+  canBeSold: 1
+  price: 5
+  maxStack: 99
+  weight: 0
+  itemTypes: 32
+  onClick: 1
+  consumeItem: 1
+  actionsOnClick: {fileID: 3205977280274445590, guid: ff86d07d8d7e8c14298c99ba4b5ba692,
+    type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 7430817747200597019, guid: 9c197c5fbf6b44044892d5e2c2813c79,
+    type: 3}
+  actionsOnEquip: {fileID: 289288944982349192, guid: 79b9afea834933047b1d48486337ddf4,
+    type: 3}
+  actionsOnUnequip: {fileID: 5407834376780347443, guid: b6a1b31a57b0b6f4c8d26f2d3c27f599,
     type: 3}

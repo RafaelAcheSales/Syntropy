@@ -16,9 +16,11 @@ public class Crop : MonoBehaviour
     [SerializeField] private Vector3 baseSize;
 
     private float progress = 0.1f;
+    private bool planted = false;
    
 
     private void Update() {
+        if (!planted) return;
         progress += growthRate * Time.deltaTime;
         progress = Mathf.Clamp(progress, 0, 3);
         if (progress < 1) currentState = State.Seed;
@@ -29,6 +31,11 @@ public class Crop : MonoBehaviour
         transform.localScale = newScale;
     }
 
-    
+    public void Plant(float conditions) {
+        planted = true;
+        growthRate = baseGrowthRate + conditions;
+    }
+
+
 
 }
