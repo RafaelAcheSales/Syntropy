@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5943991673606679877}
   - component: {fileID: 2260399889036855049}
   - component: {fileID: 3205977280274445590}
-  - component: {fileID: 904977031974847346}
+  - component: {fileID: -5474729653989091279}
+  - component: {fileID: 2798357099802682774}
+  - component: {fileID: -6911082743726185072}
   m_Layer: 0
   m_Name: consume 8
   m_TagString: Untagged
@@ -67,10 +69,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 904977031974847346}
+  - {fileID: -5474729653989091279}
+  - {fileID: 2798357099802682774}
+  - {fileID: -6911082743726185072}
   executingIndex: -1
   isExecuting: 0
---- !u!114 &904977031974847346
+--- !u!114 &-5474729653989091279
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isExpanded: 1
   method: 0
-  instantiate: 1
+  instantiate: 0
   prefab:
     target: 0
     gameObject:
@@ -112,7 +116,7 @@ MonoBehaviour:
     local:
       allowTypesMask: 608
       name: 
-      targetType: 0
+      targetType: 2
       targetObject: {fileID: 0}
     global:
       allowTypesMask: 608
@@ -142,7 +146,7 @@ MonoBehaviour:
     variableType: 0
     global:
       allowTypesMask: 512
-      name: 
+      name: CurrentPlant
     local:
       allowTypesMask: 512
       name: 
@@ -155,3 +159,129 @@ MonoBehaviour:
       index: 0
   instantiationData:
     customData: []
+--- !u!114 &2798357099802682774
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202559843153117976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47f6d43c5de44c9db0b2cc0994c7c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  target:
+    target: 6
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: CurrentPlant
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  changeParent: 1
+  newParent:
+    target: 6
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: Player
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  changePosition: 1
+  positionRelativity: 0
+  position:
+    target: 4
+    offset: {x: 0, y: 0, z: 0}
+    targetTransform: {fileID: 0}
+    targetPosition: {x: 0, y: 0, z: 1}
+    local:
+      allowTypesMask: 608
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    global:
+      allowTypesMask: 608
+      name: 
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  changeRotation: 0
+  rotationRelativity: 1
+  rotation: {x: 0, y: 0, z: 0}
+  changeScale: 0
+  scale: {x: 1, y: 1, z: 1}
+--- !u!114 &-6911082743726185072
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202559843153117976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e2dbe10998b4ebabce38ea0ce50ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  target:
+    target: 6
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: CurrentPlant
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  componentName: Collider
+  enable:
+    optionIndex: 0
+    value: 0
+    global:
+      allowTypesMask: 8
+      name: 
+    local:
+      allowTypesMask: 8
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
