@@ -900,7 +900,7 @@ MonoBehaviour:
   weight: 0
   itemTypes: 32
   onClick: 1
-  consumeItem: 0
+  consumeItem: 1
   actionsOnClick: {fileID: 3205977280274445590, guid: ff86d07d8d7e8c14298c99ba4b5ba692,
     type: 3}
   equipable: 0
