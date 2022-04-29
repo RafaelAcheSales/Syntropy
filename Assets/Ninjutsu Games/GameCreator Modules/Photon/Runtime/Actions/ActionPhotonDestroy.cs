@@ -3,7 +3,7 @@ namespace GameCreator.Core
 {
     using UnityEngine;
     using Photon.Pun;
-
+    using NJG.PUN;
 #if UNITY_EDITOR
     using UnityEditor;
 #endif
@@ -12,7 +12,12 @@ namespace GameCreator.Core
 	public class ActionPhotonDestroy : IAction
 	{
         public TargetGameObject target = new TargetGameObject();
+
+
+
+        
         public bool transferOwnership = false;
+
 
         // EXECUTABLE: ----------------------------------------------------------------------------
 
@@ -28,19 +33,17 @@ namespace GameCreator.Core
                 return false;
             }
 
-            if (views[0].IsMine || PhotonNetwork.IsMasterClient)
-            {
-                PhotonNetwork.Destroy(go);
-            }
-            else if(transferOwnership)
-            {
-                views[0].TransferOwnership(PhotonNetwork.LocalPlayer);
-                PhotonNetwork.Destroy(go);
-            }
-            else
-            {
-                Debug.LogError("Cannot Destroy! You don't have the rights to destroy this: " + go);
-            }
+            PhotonNetwork.Destroy(go);
+            
+            // else if(transferOwnership)
+            // {
+            //     views[0].TransferOwnership(PhotonNetwork.LocalPlayer);
+            //     PhotonNetwork.Destroy(go);
+            // }
+            // else
+            // {
+            //     Debug.LogError("Cannot Destroy! You don't have the rights to destroy this: " + go);
+            // }
             
             return true;
         }
@@ -84,9 +87,9 @@ namespace GameCreator.Core
 		{
 			this.serializedObject.Update();
 
+
 			EditorGUILayout.PropertyField(this.spTarget);
 			EditorGUILayout.PropertyField(this.spTransfer, new GUIContent("Force Destroy", "If TRUE and if you are not the owner of this object it will transfer the ownership to be able to destroy it"));
-
             this.serializedObject.ApplyModifiedProperties();
 		}
 

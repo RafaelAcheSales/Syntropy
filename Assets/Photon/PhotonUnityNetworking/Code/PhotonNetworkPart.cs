@@ -796,16 +796,16 @@ namespace Photon.Pun
             PhotonView viewZero = foundPVs[0];
 
             // Don't remove GOs that are owned by others (unless this is the master and the remote player left)
-            if (!localOnly)
-            {
-                //Debug.LogWarning("Destroy " + instantiationId + " creator " + creatorId, go);
-                if (!viewZero.IsMine)
-                {
-                    Debug.LogError("Failed to 'network-remove' GameObject. Client is neither owner nor MasterClient taking over for owner who left: " + viewZero);
-                    foundPVs.Clear();   // as foundPVs is re-used, clean it to avoid lingering references
-                    return;
-                }
-            }
+            // if (!localOnly)
+            // {
+            //     //Debug.LogWarning("Destroy " + instantiationId + " creator " + creatorId, go);
+            //     if (!viewZero.IsMine)
+            //     {
+            //         Debug.LogError("Failed to 'network-remove' GameObject. Client is neither owner nor MasterClient taking over for owner who left: " + viewZero);
+            //         foundPVs.Clear();   // as foundPVs is re-used, clean it to avoid lingering references
+            //         return;
+            //     }
+            // }
 
             // cleanup instantiation (event and local list)
             if (!localOnly)

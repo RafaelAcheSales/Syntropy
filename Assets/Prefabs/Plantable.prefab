@@ -514,11 +514,11 @@ GameObject:
   - component: {fileID: 8517503139387907040}
   - component: {fileID: 8517503139387907041}
   - component: {fileID: 2054536337}
-  - component: {fileID: 2054536338}
   - component: {fileID: 3192258756216931753}
   - component: {fileID: 8733251391233409930}
   - component: {fileID: 5300598366908282216}
   - component: {fileID: 6714524745251438445}
+  - component: {fileID: 2350438128860775768}
   m_Layer: 0
   m_Name: Haverst
   m_TagString: Untagged
@@ -578,7 +578,7 @@ MonoBehaviour:
   - {fileID: 3192258756216931753}
   - {fileID: 5300598366908282216}
   - {fileID: 2054536337}
-  - {fileID: 2054536338}
+  - {fileID: 2350438128860775768}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &2054536337
@@ -598,39 +598,6 @@ MonoBehaviour:
   itemHolder:
     item: {fileID: 7500061162916851922, guid: 7db43c44761c8486cb3f2e9968376eb5, type: 2}
   amount: 1
---- !u!114 &2054536338
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517503139387907043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8fcb9e15093ed4988abe7a0a467326, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isExpanded: 1
-  target:
-    target: 3
-    gameObject: {fileID: 8517503139103069790}
-    global:
-      allowTypesMask: 512
-      name: 
-    local:
-      allowTypesMask: 512
-      name: 
-      targetType: 2
-      targetObject: {fileID: 0}
-    list:
-      targetType: 3
-      targetObject: {fileID: 0}
-      select: 1
-      index: 0
-    eventChangeVariable:
-      m_PersistentCalls:
-        m_Calls: []
-  transferOwnership: 0
 --- !u!114 &3192258756216931753
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -864,6 +831,39 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
+--- !u!114 &2350438128860775768
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517503139387907043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8fcb9e15093ed4988abe7a0a467326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  target:
+    target: 3
+    gameObject: {fileID: 8517503139103069790}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  transferOwnership: 0
 --- !u!1 &8517503139488648103
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
+using Photon.Realtime;
+using NJG.PUN;
 [RequireComponent(typeof(Collider))]
-public class Crop : MonoBehaviour
+public class Crop : MonoBehaviourPun
 {
     public enum State { Seed, Small, Medium, Ready, Harvested }
     public State currentState;
@@ -36,6 +38,8 @@ public class Crop : MonoBehaviour
     public void Plant(float conditions) {
         planted = true;
         growthRate = baseGrowthRate + conditions;
+        
+        Debug.Log("Planted");
     }
 
 
