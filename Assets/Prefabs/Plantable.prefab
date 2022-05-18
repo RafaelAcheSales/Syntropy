@@ -158,7 +158,7 @@ MonoBehaviour:
   baseGrowthRate: 0.9
   growthRate: 0.8
   sizeMultiplier: 0.5
-  baseSize: {x: 0.4, y: 0.4, z: 0.4}
+  baseSize: {x: 0.01, y: 0.01, z: 0.01}
 --- !u!114 &8517503139103069792
 MonoBehaviour:
   m_ObjectHideFlags: 3
